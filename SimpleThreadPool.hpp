@@ -1,3 +1,6 @@
+#ifndef THREAD_POOL_H
+#define THREAD_POOL_H
+
 #include<mingw.mutex.h>
 #include<mingw.condition_variable.h>
 #include<mingw.thread.h>
@@ -92,3 +95,5 @@ inline auto ThreadPool::enqueue(F&& f, Args&&... args)
     condition.notify_one();
     return res;
 }
+
+#endif
