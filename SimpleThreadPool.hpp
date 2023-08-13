@@ -10,7 +10,7 @@
 #include<iostream>
 
 class ThreadPool{
-    private:
+    public:
         ThreadPool(size_t);
         ThreadPool();
         ~ThreadPool();
@@ -39,7 +39,7 @@ class ThreadPool{
                 };
             }
         }
-    public:
+    private:
         using TaskType = std::function<void()>;
 
         std::vector<std::thread> works;
