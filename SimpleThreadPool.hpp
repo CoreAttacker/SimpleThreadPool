@@ -1,9 +1,9 @@
 #ifndef THREAD_POOL_H
 #define THREAD_POOL_H
 
-#include<mingw.mutex.h>
-#include<mingw.condition_variable.h>
-#include<mingw.thread.h>
+#include<mutex>
+#include<condition_variable>
+#include<thread>
 #include<future>
 #include<vector>
 #include<queue>
